@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Para Festas - +15.000 Moldes de Festa Infantil por R$ 9,90</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Mais de 15.000 moldes de festa infantil prontos para baixar e imprimir. Acesso imediato por apenas R$ 9,90.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kit Para Festas - +15.000 Moldes por R$ 9,90">
+  <meta property="og:description" content="Baixe, imprima e monte sua festa em casa em poucos minutos.">
+  <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/87b73c4e-1165-45f9-8c37-fb9da6cfd149/id-preview-aa7c7eb0--4f3df4c2-217a-49db-a13a-2b1c2caae3b9.lovable.app-1782239310845.png">
+  
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: '#ec4899',
+              dark: '#db2777',
+              light: '#f472b6',
+            },
+            cta: {
+              DEFAULT: '#22c55e',
+              hover: '#16a34a',
+              dark: '#15803d'
+            }
+          },
+          animation: {
+            'marquee-fast': 'marquee 25s linear infinite',
+            'marquee-slow': 'marquee 35s linear infinite',
+            'pulse-glow': 'pulseGlow 2s infinite',
+            'bounce-gentle': 'bounceGentle 2s infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { 
+                boxShadow: '0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2)' 
+              },
+              '50%': { 
+                boxShadow: '0 0 35px rgba(34, 197, 94, 0.7), 0 0 60px rgba(34, 197, 94, 0.4)' 
+              }
+            },
+            bounceGentle: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-6px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .underline-highlight {
+      background-image: linear-gradient(120deg, #fef08a 0%, #fde047 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 38%;
+      background-position: 0 88%;
+      padding: 0 4px;
+    }
+    .btn-super-cta {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+    .btn-super-cta:hover {
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.5);
+    }
+    .btn-super-cta:active {
+      transform: translateY(0) scale(0.98);
+    }
+    .btn-basic-cta {
+      background: #1e293b;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .btn-basic-cta:hover {
+      background: #0f172a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.3);
+    }
+    .btn-basic-cta:active {
+      transform: translateY(0);
+    }
+    .modal-backdrop {
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased overflow-x-hidden selection:bg-pink-200 selection:text-pink-900">
+
+  <!-- ========================================================================= -->
+  <!-- 1. BARRA DE URGÊNCIA / TOPO FIXO                                           -->
+  <!-- ========================================================================= -->
+  <header class="sticky top-0 z-40 bg-gradient-to-r from-rose-600 via-pink-600 to-rose-600 text-white py-2.5 px-4 text-center font-bold text-xs sm:text-sm md:text-base shadow-md">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+      <span class="flex items-center gap-1.5 animate-pulse">
+        <span class="text-base sm:text-lg">🔥</span> 
+        <span>OFERTA SOMENTE HOJE <span id="header-today-date" class="font-extrabold underline decoration-yellow-300 underline-offset-2">--/--/----</span></span>
+      </span>
+      <span class="hidden sm:inline opacity-70">•</span>
+      <span class="inline-flex items-center gap-2">
+        <span class="font-normal text-rose-100">Essa promoção termina em:</span>
+        <span id="countdown-timer" class="font-mono tabular-nums bg-slate-900 text-yellow-300 px-2.5 py-0.5 rounded-lg text-sm md:text-base tracking-wider font-extrabold shadow-inner border border-slate-700">00:24:48</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO SECTION                                                           -->
+  <!-- ========================================================================= -->
+  <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 px-4 overflow-hidden bg-gradient-to-b from-pink-50/60 via-white to-slate-50">
+    <div class="max-w-4xl mx-auto text-center">
+      
+      <!-- Pill Badge -->
+      <div class="inline-flex items-center gap-2 bg-pink-100 border border-pink-200 text-pink-700 px-4 py-1.5 rounded-full text-xs md:text-sm font-extrabold tracking-wide uppercase shadow-sm mb-6 animate-bounce-gentle">
+        <span class="w-2 h-2 rounded-full bg-pink-500 animate-ping"></span>
+        <span>🎉 ACESSO A PARTIR DE APENAS R$ 9,90</span>
+      </div>
+
+      <!-- Headline Principal -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.15] text-slate-900">
+        +15.000 <span class="text-pink-600 underline-highlight">MOLDES</span> DE FESTA INFANTIL <br class="hidden sm:inline">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">PRONTOS</span> PARA BAIXAR E IMPRIMIR
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-6 text-slate-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
+        Arquivos digitais prontos e organizados para você imprimir em casa ou na gráfica e montar festas completas gastando quase nada!
+      </p>
+
+      <!-- Smartphone / Vídeo Mockup -->
+      <div class="mt-10 mb-8 flex justify-center">
+        <div class="relative w-[280px] sm:w-[320px] aspect-[9/18.5] rounded-[3rem] p-3.5 bg-slate-900 border-4 border-slate-800 shadow-2xl shadow-pink-500/10">
+          <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-950 rounded-full z-20 flex items-center justify-center gap-2">
+            <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
+            <div class="w-2.5 h-2.5 bg-slate-800 rounded-full"></div>
+          </div>
+          
+          <div class="relative w-full h-full rounded-[2.3rem] overflow-hidden bg-slate-950 flex flex-col justify-center items-center">
+            <video 
+              src="/__l5e/assets-v1/6ee296ac-7061-4bc2-bc70-245a47a168c5/hero-video.mp4" 
+              poster="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-67.webp"
+              autoplay 
+              loop 
+              muted 
+              playsinline 
+              class="w-full h-full object-cover">
+            </video>
+            
+            <div class="absolute bottom-4 left-3 right-3 bg-slate-900/85 backdrop-blur-md border border-white/10 rounded-xl p-2.5 text-left text-white shadow-lg">
+              <p class="text-[11px] font-bold text-yellow-400 flex items-center gap-1">
+                <i class="fa-solid fa-cloud-arrow-down"></i> +15.000 Moldes no Drive
+              </p>
+              <p class="text-[10px] text-slate-300 truncate">Caixas, Toppers, Convites, Painéis e mais</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparativo de Preço & Economia -->
+      <div class="bg-white border-2 border-pink-100 rounded-2xl p-6 shadow-sm max-w-xl mx-auto">
+        <p class="text-base sm:text-lg font-bold text-slate-800">
+          Baixe, imprima e monte sua festa em casa em poucos minutos.
+        </p>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">
+          Decoradoras cobram entre <span class="font-bold text-rose-500">R$ 300</span> e <span class="font-bold text-rose-500">R$ 800</span> para montar uma festa.
+        </p>
+        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-center gap-2">
+          <span class="text-sm font-semibold text-slate-600">Aqui você paga a partir de:</span>
+          <span class="text-3xl font-black text-pink-600">R$ 9,90</span>
+        </div>
+      </div>
+
+      <!-- Botão CTA Principal -->
+      <div class="mt-8 flex flex-col items-center">
+        <a href="#pacotes" class="btn-super-cta text-white py-4 px-8 sm:px-10 rounded-2xl text-lg sm:text-xl shadow-xl animate-pulse-glow w-full max-w-md">
+          <span>🎉 Quero meus moldes agora</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        
+        <div class="mt-4 space-y-1">
+          <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-bolt text-yellow-500"></i>
+            <span>Produto 100% digital. Acesso imediato no seu e-mail.</span>
+          </p>
+          <p class="text-xs text-slate-500 font-medium flex items-center justify-center gap-2">
+            <span>🔒 Pagamento 100% seguro</span>
+            <span>•</span>
+            <span>✅ Garantia de 30 dias</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. CARROSSEL DE FOTOS REAIS (MARQUEE 1)                                    -->
+  <!-- ========================================================================= -->
+  <section class="py-14 bg-pink-50/60 border-y border-pink-100 overflow-hidden">
+    <div class="text-center mb-8 px-4">
+      <div class="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">Galeria Real</div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900">
+        Veja festas feitas com os nossos moldes
+      </h2>
+      <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-xl mx-auto">
+        Resultados reais e encantadores de mães e festeiras que já usaram nossos arquivos
+      </p>
+    </div>
+
+    <div class="relative w-full overflow-hidden">
+      <div class="flex gap-4 w-max animate-marquee-fast">
+        <div class="flex gap-4">
+          <img src="https://festascriativass.lovable.app/festas/festa-02.jpg" alt="Festa Infantil 1" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-03.jpg" alt="Festa Infantil 2" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-04.jpg" alt="Festa Infantil 3" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-05.jpg" alt="Festa Infantil 4" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-06.jpg" alt="Festa Infantil 5" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-07.jpg" alt="Festa Infantil 6" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-08.jpg" alt="Festa Infantil 7" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-09.jpg" alt="Festa Infantil 8" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-10.jpg" alt="Festa Infantil 9" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-11.jpg" alt="Festa Infantil 10" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-12.jpg" alt="Festa Infantil 11" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-13.jpg" alt="Festa Infantil 12" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-14.jpg" alt="Festa Infantil 13" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-15.jpg" alt="Festa Infantil 14" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-16.jpg" alt="Festa Infantil 15" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-17.jpg" alt="Festa Infantil 16" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+        </div>
+        <div class="flex gap-4" aria-hidden="true">
+          <img src="https://festascriativass.lovable.app/festas/festa-02.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-03.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-04.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-05.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-06.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-07.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-08.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-09.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-10.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-11.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-12.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-13.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-14.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-15.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-16.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+          <img src="https://festascriativass.lovable.app/festas/festa-17.jpg" alt="" class="w-60 sm:w-64 h-60 sm:h-64 object-cover rounded-2xl shadow-md border-2 border-white" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. COMO FUNCIONA                                                          -->
+  <!-- ========================================================================= -->
+  <section class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <div class="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">
+        Fácil e Descomplicado
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+        Como Funciona?
+      </h2>
+      <p class="text-slate-600 mt-2 text-base sm:text-lg">
+        Tudo muito simples, rápido e sem qualquer dificuldade técnica
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white border-2 border-slate-100 rounded-3xl p-8 text-center shadow-sm hover:shadow-xl hover:border-pink-200 transition-all duration-300 group">
+        <div class="w-16 h-16 mx-auto mb-6 bg-pink-50 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+          ⚡
+        </div>
+        <div class="text-xs font-extrabold text-pink-600 tracking-widest uppercase bg-pink-50 inline-block px-3 py-1 rounded-full mb-3">
+          Passo 01
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Acesso Imediato</h3>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+          Após a confirmação do pagamento, você recebe imediatamente o link de acesso aos arquivos no seu e-mail cadastrado.
+        </p>
+      </div>
+
+      <div class="bg-white border-2 border-slate-100 rounded-3xl p-8 text-center shadow-sm hover:shadow-xl hover:border-pink-200 transition-all duration-300 group">
+        <div class="w-16 h-16 mx-auto mb-6 bg-yellow-50 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+          👆
+        </div>
+        <div class="text-xs font-extrabold text-amber-600 tracking-widest uppercase bg-amber-50 inline-block px-3 py-1 rounded-full mb-3">
+          Passo 02
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Escolha os Temas</h3>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+          Navegue pelas pastas organizadas com milhares de temas infantis: caixas, topos, convites, painéis e decorações.
+        </p>
+      </div>
+
+      <div class="bg-white border-2 border-slate-100 rounded-3xl p-8 text-center shadow-sm hover:shadow-xl hover:border-pink-200 transition-all duration-300 group">
+        <div class="w-16 h-16 mx-auto mb-6 bg-emerald-50 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform">
+          🖨️
+        </div>
+        <div class="text-xs font-extrabold text-emerald-600 tracking-widest uppercase bg-emerald-50 inline-block px-3 py-1 rounded-full mb-3">
+          Passo 03
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Imprima ou Venda</h3>
+        <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+          Imprima na sua impressora caseira ou papelaria local. Monte a festa do seu filho ou monte kits para vender e lucrar!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. DEPOIMENTOS DE CLIENTES                                                -->
+  <!-- ========================================================================= -->
+  <section class="py-16 bg-slate-100/70 border-y border-slate-200 overflow-hidden">
+    <div class="text-center mb-10 px-4">
+      <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase mb-2">
+        Depoimentos e Avaliações
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+        O Que Nossas Clientes Dizem
+      </h2>
+      <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-xl mx-auto">
+        Milhares de mães e artesãs já economizaram tempo e dinheiro com nossos moldes
+      </p>
+    </div>
+
+    <div class="relative w-full overflow-hidden">
+      <div class="flex gap-6 w-max animate-marquee-slow">
+        <div class="flex gap-6">
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/images/testimonials/t1.jpg" alt="Depoimento 1" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/assets/testimonial-sirlane-DyBcjxpJ.webp" alt="Depoimento 2" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/images/testimonials/t3.jpg" alt="Depoimento 3" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/assets/testimonial-tamira-l5ltG3qw.webp" alt="Depoimento 4" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+        </div>
+        <div class="flex gap-6" aria-hidden="true">
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/images/testimonials/t1.jpg" alt="" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/assets/testimonial-sirlane-DyBcjxpJ.webp" alt="" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/images/testimonials/t3.jpg" alt="" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+          <div class="bg-white p-3 rounded-2xl shadow-md border border-slate-200 w-72 sm:w-80 flex-shrink-0">
+            <img src="https://solucoesparamaes.shop/assets/testimonial-tamira-l5ltG3qw.webp" alt="" class="w-full rounded-xl object-cover" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. VITRINE DE TEMAS                                                       -->
+  <!-- ========================================================================= -->
+  <section class="py-20 px-4 max-w-6xl mx-auto text-center">
+    <div class="inline-block bg-yellow-100 text-amber-800 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">
+      Catálogo Gigante
+    </div>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900">
+      Alguns dos Temas Disponíveis
+    </h2>
+    <p class="text-slate-600 mt-3 text-base sm:text-lg max-w-2xl mx-auto">
+      Uma pequena amostra do acervo completo com mais de 15.000 moldes que você vai receber
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-5 mt-10">
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-67.webp" alt="Tema Infantil" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-1.webp" alt="Tema Infantil" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/ana_castela_03.webp" alt="Tema Ana Castela" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/ana_castela_02.webp" alt="Tema Ana Castela" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/stich_06.webp" alt="Tema Stitch" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/stich_05.webp" alt="Tema Stitch" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit1-8XJHx3nd.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit2-I1vxxmIc.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit3-WuHv-7Hg.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit5-EGkvLyMq.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit6-5WBoJoFR.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://solucoesparamaes.shop/assets/kit7-CVXxCM2F.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/divertidamente_05.webp" alt="Tema Divertida Mente" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-7.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/stich_03.webp" alt="Tema Stitch" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+      <div class="group overflow-hidden rounded-2xl shadow-sm border border-slate-200 bg-white">
+        <img src="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-59.webp" alt="Tema Festa" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-10 max-w-4xl mx-auto">
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🕷️ Homem Aranha</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">❄️ Frozen</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">💖 Barbie</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🐶 Patrulha Canina</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🦁 Safari Baby</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🐭 Mickey & Minnie</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">👑 Princesas Disney</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🦔 Sonic</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🎵 TikTok & Neon</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🌸 Jardim Encantado</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🤠 Ana Castela / Boiadeira</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">🧠 Divertida Mente 2</span>
+      <span class="bg-white border border-pink-200 text-slate-700 rounded-full px-4 py-2 text-xs sm:text-sm font-semibold shadow-sm">💙 Stitch</span>
+    </div>
+
+    <div class="mt-8">
+      <a href="#pacotes" class="btn-super-cta text-white py-4 px-8 rounded-2xl text-lg shadow-lg">
+        <span>🎉 Quero todos os temas agora</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. BÔNUS EXCLUSIVOS (DARK LUXURY)                                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 px-4 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      
+      <div class="inline-block bg-pink-500/20 border border-pink-500/30 text-pink-400 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">
+        Presentes Especiais
+      </div>
+      
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-black">
+        Bônus Exclusivos Gratuitos
+      </h2>
+      <p class="text-slate-300 mt-3 text-base sm:text-lg max-w-2xl mx-auto">
+        Adquirindo o pacote completo hoje, você leva todos esses super bônus sem pagar nenhum centavo a mais!
+      </p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12 text-left">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">👑</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">+1.300 Topos de Bolo</h4>
+          <p class="text-xs text-slate-400 mt-1">Modelos prontos para imprimir e aplicar em bolos decorados.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">✂️</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Minicurso Silhouette</h4>
+          <p class="text-xs text-slate-400 mt-1">Aprenda a cortar e configurar seus arquivos no Silhouette Studio.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🎨</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">500 Moldes no Canva</h4>
+          <p class="text-xs text-slate-400 mt-1">Arquivos editáveis direto no Canva pelo celular ou computador.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🔤</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Pack Fontes Premium</h4>
+          <p class="text-xs text-slate-400 mt-1">Centenas de fontes tipográficas infantis dos temas famosos.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">📖</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Guia Festa Perfeita</h4>
+          <p class="text-xs text-slate-400 mt-1">Manual de economia e dicas práticas para montar festas sem estresse.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🔥</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Temas em Alta</h4>
+          <p class="text-xs text-slate-400 mt-1">Lançamentos de filmes e desenhos infantis atualizados.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🎬</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Tutoriais em Vídeo</h4>
+          <p class="text-xs text-slate-400 mt-1">Aulas práticas demonstrando a montagem e impressão correta.</p>
+        </div>
+
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-6 hover:bg-white/10 transition-colors group">
+          <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🎁</div>
+          <h4 class="font-bold text-sm sm:text-base text-white">Atualizações Futuras</h4>
+          <p class="text-xs text-slate-400 mt-1">Novos temas adicionados no Drive sem você pagar nada a mais.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 inline-block bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-2xl px-8 py-5 shadow-2xl border border-emerald-400/40">
+        <div class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-emerald-100">
+          Valor Total Somado dos Bônus:
+        </div>
+        <div class="text-xl sm:text-2xl font-black mt-1">
+          DE <span class="line-through text-red-300 opacity-80">R$ 297,00</span> POR: <span class="text-yellow-300 text-3xl sm:text-4xl">GRÁTIS HOJE</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. TABELA DE PACOTES (#pacotes)                                           -->
+  <!-- ========================================================================= -->
+  <section id="pacotes" class="py-20 px-4 scroll-mt-14 bg-gradient-to-b from-slate-50 to-pink-50/40">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-14">
+        <div class="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-3">
+          Valores Promocionais
+        </div>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900">
+          ESCOLHA SEU PACOTE
+        </h2>
+        <p class="text-slate-600 mt-2 text-base sm:text-lg">
+          Acesso vitalício, pagamento único e sem mensalidades
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        
+        <!-- CARD 1: PACOTE BÁSICO (R$ 9,90) -->
+        <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-10 shadow-md flex flex-col justify-between hover:border-slate-300 transition-all">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-extrabold text-slate-900">Pacote Básico</h3>
+              <span class="text-xs font-bold bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Essencial</span>
+            </div>
+            
+            <div class="mt-6">
+              <div class="text-5xl font-black text-slate-900 tracking-tight">R$ 9,90</div>
+              <div class="text-xs font-semibold text-slate-500 mt-1">Pagamento único • Sem mensalidades</div>
+            </div>
+
+            <ul class="mt-8 space-y-3.5 text-sm text-slate-700">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-emerald-500 text-base"></i>
+                <span class="font-medium">+3.000 moldes de festa infantil</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-emerald-500 text-base"></i>
+                <span class="font-medium">Acesso imediato no e-mail</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-emerald-500 text-base"></i>
+                <span class="font-medium">Arquivos prontos para imprimir (PDF/JPG)</span>
+              </li>
+              <li class="flex items-center gap-3 text-slate-400">
+                <i class="fa-solid fa-xmark text-red-400 text-base"></i>
+                <span>NÃO inclui Topos de Bolo (+1.300)</span>
+              </li>
+              <li class="flex items-center gap-3 text-slate-400">
+                <i class="fa-solid fa-xmark text-red-400 text-base"></i>
+                <span>NÃO inclui Moldes Editáveis no Canva</span>
+              </li>
+              <li class="flex items-center gap-3 text-slate-400">
+                <i class="fa-solid fa-xmark text-red-400 text-base"></i>
+                <span>NÃO inclui Atualizações Futuras</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-10">
+            <!-- Botão da Oferta R$ 9,90 com Link Direto da Cakto -->
+            <a 
+              href="https://pay.cakto.com.br/3xvi8zk" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-basic-cta w-full text-white py-4 px-6 rounded-2xl text-base shadow-md">
+              <span>QUERO O PACOTE BÁSICO POR R$ 9,90</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <p class="text-center text-[11px] text-slate-400 mt-2">Acesso aos 3.000 arquivos essenciais</p>
+          </div>
+        </div>
+
+        <!-- CARD 2: PACOTE PREMIUM + BÔNUS (R$ 17,90 - MAIS VENDIDO) -->
+        <div class="bg-white border-4 border-pink-500 rounded-3xl p-8 sm:p-10 shadow-2xl shadow-pink-500/20 flex flex-col justify-between relative transform md:-translate-y-2">
+          
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-950 text-xs font-black px-5 py-2 rounded-full shadow-md uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-star text-slate-950"></i>
+            <span>O MAIS ESCOLHIDO (7 A CADA 10)</span>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-black text-slate-900">PACOTE PREMIUM + BÔNUS</h3>
+            </div>
+            
+            <div class="mt-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wide">
+                De <span class="line-through text-red-500 font-bold">R$ 297,00</span> por apenas:
+              </div>
+              <div class="text-5xl font-black text-pink-600 tracking-tight mt-0.5">R$ 17,90</div>
+              <div class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md inline-block mt-2">
+                🔥 Você economiza mais de R$ 279 hoje
+              </div>
+            </div>
+
+            <ul class="mt-6 space-y-2.5 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-bold text-slate-900">+15.000 moldes de festa infantil</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-semibold">+1.300 Topos de Bolo Prontos</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-semibold">500 Moldes Editáveis no Canva</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-semibold">Curso Completo Silhouette Studio</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-semibold">Pack de Fontes Premium Infantis</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-bold text-emerald-600">Atualizações Futuras no Drive Gratuitas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span class="font-bold text-slate-900">Acesso Imediato e Vitalício</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span>Convites, Caixa Milk, Pirâmide, Sushi, Bala, Mala</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-pink-600 text-sm"></i>
+                <span>Garantia Total de 30 Dias</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <!-- Botão da Oferta R$ 17,90 com Link Direto da Cakto -->
+            <a 
+              href="https://pay.cakto.com.br/92vbnue_1068126" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-super-cta w-full text-white py-4 px-6 rounded-2xl text-base sm:text-lg shadow-xl animate-pulse-glow">
+              <span>🔥 QUERO O PREMIUM POR R$ 17,90</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="text-center text-xs font-semibold text-pink-600 mt-2.5">
+              ⭐ O pacote mais completo e lucrativo
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. SEÇÃO DE GARANTIA                                                      -->
+  <!-- ========================================================================= -->
+  <section class="py-16 px-4 bg-white border-y border-slate-200">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="w-20 h-20 mx-auto mb-5 bg-yellow-50 border-2 border-yellow-200 rounded-3xl flex items-center justify-center text-4xl shadow-sm">
+        🛡️
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+        Garantia Incondicional de 30 Dias
+      </h2>
+      <p class="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
+        Se por qualquer motivo você achar que o material não atendeu às suas expectativas, basta nos enviar um e-mail e devolveremos 100% do seu dinheiro.
+      </p>
+      <p class="text-slate-500 mt-2 text-sm font-semibold">
+        Sem perguntas, sem burocracia. O risco é todo nosso!
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. FAQ ACCORDION                                                         -->
+  <!-- ========================================================================= -->
+  <section class="py-20 px-4 max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-2">
+        Tire suas dúvidas
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+        Perguntas Frequentes
+      </h2>
+      <p class="text-slate-600 mt-2 text-sm sm:text-base">
+        Clique na pergunta para ver a resposta detalhada
+      </p>
+    </div>
+
+    <div class="space-y-3" id="faq-accordion">
+      
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">Preciso saber mexer em programas difíceis de design?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          Não! Os moldes já vêm prontinhos no formato PDF e JPG para você só abrir e imprimir direto na sua impressora. E se quiser personalizar com nome e idade, temos centenas de arquivos que você edita em 2 minutos direto no Canva pelo celular ou computador!
+        </div>
+      </div>
+
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">Como recebo o material após a compra?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          O envio é 100% automático e imediato. Assim que o pagamento (via PIX ou Cartão) for confirmado, você receberá um e-mail com seus dados e link direto para acessar todas as pastas do Google Drive com os arquivos organizados.
+        </div>
+      </div>
+
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">Posso usar os moldes para vender festas e lucrar?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          Com certeza! Você tem total liberdade comercial para imprimir, personalizar, montar caixinhas e topos e vender kits prontos para suas clientes, cobrando o valor que quiser e criando uma excelente fonte de renda extra ou principal.
+        </div>
+      </div>
+
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">Funciona pelo celular ou preciso de computador?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          Funciona perfeitamente em ambos! Você pode baixar e visualizar tudo pelo celular ou tablet. Para imprimir, basta enviar os arquivos do celular para a sua impressora ou para uma gráfica rápida pelo WhatsApp.
+        </div>
+      </div>
+
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">O acesso é vitalício ou tem mensalidade?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          O pagamento é único! Não existe nenhuma mensalidade, anuidade ou taxa oculta. Você paga uma única vez e o acesso aos arquivos e bônus no Google Drive será seu para sempre.
+        </div>
+      </div>
+
+      <div class="border-2 border-slate-200 rounded-2xl bg-white overflow-hidden transition-all duration-200">
+        <button 
+          type="button" 
+          onclick="toggleFaq(this)" 
+          class="w-full flex items-center justify-between px-6 py-5 text-left font-bold text-slate-900 hover:bg-pink-50/50 transition-colors gap-4">
+          <span class="text-base sm:text-lg">Qual papel e impressora devo usar para imprimir?</span>
+          <span class="faq-icon text-pink-600 text-2xl font-bold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-3">
+          Você pode usar qualquer impressora jato de tinta comum (Epson, HP, Canon, etc.). Recomendamos papéis com gramatura de 180g a 240g, como Papel Fotográfico Glossy (brilho), Matte (fosco) ou Papel Offset 180g.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#pacotes" class="btn-super-cta text-white py-4 px-8 rounded-2xl text-lg shadow-lg">
+        <span>🎉 Garantir Meus Moldes com Desconto</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. RODAPÉ                                                                -->
+  <!-- ========================================================================= -->
+  <footer class="py-12 px-4 bg-slate-950 text-slate-400 text-xs border-t border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <p class="text-sm font-bold text-slate-200">
+        © <span id="footer-year">2026</span> Kit Para Festas — Todos os direitos reservados
+      </p>
+      
+      <p class="max-w-2xl mx-auto text-slate-500 leading-relaxed">
+        Este site não é afiliado ao Facebook ou a qualquer entidade do Meta Inc. Os produtos comercializados são arquivos digitais para confecção de papelaria e decorações para festas.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 text-slate-400 pt-2">
+        <span class="flex items-center gap-1"><i class="fa-solid fa-shield-halved text-emerald-400"></i> Pagamento 100% Seguro</span>
+        <span>•</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-bolt text-yellow-400"></i> Acesso Imediato</span>
+        <span>•</span>
+        <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-pink-400"></i> Garantia de 30 Dias</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 12. JAVASCRIPT DINÂMICO                                                   -->
+  <!-- ========================================================================= -->
+  <script>
+    function updateDates() {
+      const now = new Date();
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0');
+      const year = now.getFullYear();
+      
+      const formattedDate = `${day}/${month}/${year}`;
+      const headerDateEl = document.getElementById('header-today-date');
+      const footerYearEl = document.getElementById('footer-year');
+      
+      if (headerDateEl) headerDateEl.textContent = formattedDate;
+      if (footerYearEl) footerYearEl.textContent = year;
+    }
+
+    function startCountdown() {
+      let durationSeconds = (27 * 60) + 13;
+      const timerEl = document.getElementById('countdown-timer');
+      
+      setInterval(() => {
+        if (durationSeconds <= 0) {
+          durationSeconds = 15 * 60;
+        }
+        durationSeconds--;
+        
+        const hours = Math.floor(durationSeconds / 3600);
+        const minutes = Math.floor((durationSeconds % 3600) / 60);
+        const seconds = durationSeconds % 60;
+        
+        const formatted = 
+          String(hours).padStart(2, '0') + ':' +
+          String(minutes).padStart(2, '0') + ':' +
+          String(seconds).padStart(2, '0');
+          
+        if (timerEl) timerEl.textContent = formatted;
+      }, 1000);
+    }
+
+    function toggleFaq(button) {
+      const parent = button.closest('.border-2');
+      const answer = parent.querySelector('.faq-answer');
+      const icon = button.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+      
+      document.querySelectorAll('.faq-answer').forEach(item => item.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(ic => {
+        ic.textContent = '+';
+        ic.classList.remove('rotate-45');
+      });
+
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.textContent = '×';
+        icon.classList.add('rotate-45');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateDates();
+      startCountdown();
+    });
+  </script>
+</body>
+</html>
