@@ -41,6 +41,23 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
+  <!-- Wistia Video Player Scripts & Styles -->
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src="https://fast.wistia.com/embed/fdzsjyjkkn.js" async type="module"></script>
+  <style>
+    wistia-player[media-id='fdzsjyjkkn']:not(:defined) { 
+      background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/fdzsjyjkkn/swatch'); 
+      display: block; 
+      filter: blur(5px); 
+      padding-top: 177.78%; 
+    }
+    wistia-player {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+  </style>
+
   <!-- Tailwind Configuration -->
   <script>
     tailwind.config = {
@@ -186,28 +203,15 @@
       <!-- Smartphone / Vídeo Mockup -->
       <div class="mt-10 mb-8 flex justify-center">
         <div class="relative w-[280px] sm:w-[320px] aspect-[9/18.5] rounded-[3rem] p-3.5 bg-slate-900 border-4 border-slate-800 shadow-2xl shadow-pink-500/10">
-          <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-950 rounded-full z-20 flex items-center justify-center gap-2">
+          <!-- Dynamic Island Notch -->
+          <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-950 rounded-full z-20 flex items-center justify-center gap-2 pointer-events-none">
             <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
             <div class="w-2.5 h-2.5 bg-slate-800 rounded-full"></div>
           </div>
           
+          <!-- Screen Content (Wistia Video Player) -->
           <div class="relative w-full h-full rounded-[2.3rem] overflow-hidden bg-slate-950 flex flex-col justify-center items-center">
-            <video 
-              src="/__l5e/assets-v1/6ee296ac-7061-4bc2-bc70-245a47a168c5/hero-video.mp4" 
-              poster="https://dripay.com.br/sites/kitfesta/assets/images/FOTO-CARROSSEL-67.webp"
-              autoplay 
-              loop 
-              muted 
-              playsinline 
-              class="w-full h-full object-cover">
-            </video>
-            
-            <div class="absolute bottom-4 left-3 right-3 bg-slate-900/85 backdrop-blur-md border border-white/10 rounded-xl p-2.5 text-left text-white shadow-lg">
-              <p class="text-[11px] font-bold text-yellow-400 flex items-center gap-1">
-                <i class="fa-solid fa-cloud-arrow-down"></i> +15.000 Moldes no Drive
-              </p>
-              <p class="text-[10px] text-slate-300 truncate">Caixas, Toppers, Convites, Painéis e mais</p>
-            </div>
+            <wistia-player media-id="fdzsjyjkkn" aspect="0.5625"></wistia-player>
           </div>
         </div>
       </div>
