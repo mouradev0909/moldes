@@ -649,6 +649,7 @@
           <div class="mt-10">
             <!-- Botão da Oferta R$ 9,90 com Link Direto da Cakto -->
             <a 
+              id="checkOutButtonBasic"
               href="https://pay.cakto.com.br/3xvi8zk" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -726,6 +727,7 @@
           <div class="mt-8">
             <!-- Botão da Oferta R$ 17,90 com Link Direto da Cakto -->
             <a 
+              id="checkOutButtonPremium"
               href="https://pay.cakto.com.br/92vbnue_1068126" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -953,9 +955,53 @@
       }
     }
 
+    // 5. Rastreamento de Evento InitiateCheckout para o Meta Pixel
     document.addEventListener('DOMContentLoaded', () => {
       updateDates();
       startCountdown();
+
+      // Botão Pacote Básico (R$ 9,90)
+      const btnBasic = document.getElementById('checkOutButtonBasic');
+      if (btnBasic) {
+        btnBasic.addEventListener('click', function() {
+          if (typeof fbq === 'function') {
+            fbq('track', 'InitiateCheckout', {
+              content_name: 'Pacote Básico - +300 Moldes',
+              content_category: 'Festas Infantis',
+              value: 9.90,
+              currency: 'BRL'
+            });
+          }
+        }, false);
+      }
+
+      // Botão Pacote Premium (R$ 17,90)
+      const btnPremium = document.getElementById('checkOutButtonPremium');
+      if (btnPremium) {
+        btnPremium.addEventListener('click', function() {
+          if (typeof fbq === 'function') {
+            fbq('track', 'InitiateCheckout', {
+              content_name: 'Pacote Premium - +1.500 Moldes + Bônus',
+              content_category: 'Festas Infantis',
+              value: 17.90,
+              currency: 'BRL'
+            });
+          }
+        }, false);
+      }
+
+      // Suporte a botão genérico checkOutButton
+      const genericBtn = document.getElementById('checkOutButton');
+      if (genericBtn) {
+        genericBtn.addEventListener('click', function() {
+          if (typeof fbq === 'function') {
+            fbq('track', 'InitiateCheckout', {
+              content_name: 'Kit Para Festas',
+              currency: 'BRL'
+            });
+          }
+        }, false);
+      }
     });
   </script>
 </body>
